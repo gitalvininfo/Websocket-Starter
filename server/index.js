@@ -8,7 +8,7 @@ let connection;
 wss.on('connection', socket => {
     connection = socket;
     connection.on('message', message => {
-        connection.send(`Your number is! ${message}`)
+        connection.send(`Your number is! ${wemessage}`)
     })
 
     connection.on('close', () => {
